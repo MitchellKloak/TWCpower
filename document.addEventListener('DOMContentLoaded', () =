@@ -1,0 +1,11 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const boxes = document.querySelectorAll('.box');
+    
+    boxes.forEach(box => {
+        box.addEventListener('click', () => {
+            const room = box.getAttribute('data-title');
+            alert(`You clicked on ${room}`);
+            // Add your logic here for controlling the lights, A/C, heaters, etc.
+        });
+    });
+});
